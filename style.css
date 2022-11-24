@@ -1,0 +1,814 @@
+
+:root {
+    --fontFamilyHeading: 'Racing Sans One', cursive;
+    --navBarBackgroundColor : #FFECD1;
+    --textColor: #78290F;
+    --yellowColor: #FF7D00;
+    --Poppins: 'Poppins';
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--navBarBackgroundColor);
+}
+h5{
+    color: var(--navBarBackgroundColor);
+}
+.h1{
+    font-family: var(--fontFamilyHeading);
+    color: var(--textColor);
+}
+
+#navBar{
+    display: none;  
+}
+#videoContainer{
+    position: relative;
+}
+#logo{
+    width: 50%;
+    position: absolute;
+    bottom: 1%;
+    left: 3%;
+}
+#videoContainer{
+    margin: 0;
+}
+#showCase{
+    width: 390px;
+    background-size: contain;
+}
+#controlsContainer{
+    background-color: var(--textColor);
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -5px;
+}
+#logoAndNameContainer{
+    width: 15%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+.songName{
+    margin: 2px;
+    position: relative;
+    top: 55px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: var(--Poppins);
+    font-size: 15px;
+}
+#imgSong{
+    width:48px;
+    height: 47px;
+    padding: 10px;
+    position: relative;
+    top: -20px;
+}
+#divCtrl{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.line{
+    width: 246.86px;
+    height: 3px;
+    background-color: var(--yellowColor);
+    position: absolute;
+    top: 40%;
+}
+.ping{
+    width: 7px;
+    height: 6px;
+    background-color: var(--navBarBackgroundColor);
+    border: var(--yellowColor) 1px solid ;
+    border-radius: 50px;
+    position: absolute;
+    left: 0%;
+    top: 37%;
+}
+
+
+#btns{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 15%;
+}
+#btns img{
+    width: 25px;
+}
+.hidden{
+    display: none;
+}
+#timeContainer{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    color: #FFECD1;
+    position: absolute;
+    top: 70px;
+    right: 5%;
+}
+#socialLinksContainer{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+#moreSays{
+    color: #78290F;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: 0.2rem;
+    font-family: var(--Poppins);
+}
+#underline{
+    width: 50px;
+    height: 3px;
+    background-color: var(--textColor);
+    position: absolute;
+    top: 44%;
+}
+#linksContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+#linksContainer img{
+    height: 35px;
+}
+
+#latestvideo{
+    width: 100%;
+}
+
+.h1Text{
+    margin: -5px;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    color: var(--textColor);
+    font-family: var(--fontFamilyHeading);
+}
+.down{
+    position: relative;
+    bottom: 5px;
+}
+#eventContainer{
+    background-image:url(./img/SQUIGGLY.png);
+    background-size: cover;
+    width: 100%;    
+    background-position: center;
+    height:380px;
+    margin-top: 150px;
+}
+#event{
+    text-align: center;
+    color: var(--navBarBackgroundColor);
+    font-size: 30px;
+    letter-spacing: 0.5rem;
+    font-family: var(--fontFamilyHeading);
+    position: relative;
+    top: 130px;
+}
+#schedule{
+    text-align: center;
+    color: var(--navBarBackgroundColor);
+    font-size:20px;
+    margin: 0;
+    position: relative;
+    top: 130px;
+    letter-spacing: 0.1rem;
+    font-family: var(--fontFamilyHeading);
+}
+#songContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top:  -40px;
+    background-color: var(--textColor);
+    padding: 9%;
+    color: var(--yellowColor);
+    gap: 10px;
+    font-family: var(--fontFamilyHeading);
+    font-weight: 300;
+    position: relative;
+}
+#songContainer h1{
+    color: var(--yellowColor);
+    letter-spacing: 0.7rem;
+    font-weight: bolder;
+    font-size: 24px;
+    margin: auto;
+    margin: 30px auto;
+}
+.songContainer{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 200px;
+
+}
+.songContainer p {
+   font-size:  16px;
+    margin: 3px;
+    font-weight: bolder;
+}
+#aboutUsPic{
+    width: 100%;
+}
+#AboutUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+#leftSideAbout{
+    position: relative;
+}
+.backgroundAboutUs{
+    background-color: #78290F;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.headingAboutUs{
+    color: var(--navBarBackgroundColor);
+    position: absolute;
+    bottom: 0%;
+    width: 100px;
+    letter-spacing: 0.8rem;
+    left: 5%;
+
+    font-size: 40px;
+    font-family: var(--fontFamilyHeading);
+
+}
+
+#rightSideAbout{
+    margin-top: 20px;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 60px;
+    font-weight: bold;
+    font-family: var(--Poppins);
+    color: var(--textColor);
+
+    font-size: 18px;
+    justify-content: center ;
+    align-items: center;
+    text-transform: lowercase;
+    margin: 20px auto;
+}
+#leftSidePersona{
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--textColor);
+    font-weight: bolder ;
+}
+#leftSidePersona span h1{
+    width: 40%;
+    margin: auto;
+    font-size: 36px;
+    font-weight: bolder;
+}
+#leftSidePersona span{
+    letter-spacing: 0.6rem;
+    text-align: center;
+    font-weight: bolder;
+
+    
+}
+.surname{
+    text-align: center;
+    font-size: 34px;
+    position: relative;
+    bottom: 15px;
+    font-weight: bolder;
+
+}
+#rightsidePersona{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#rightsidePersona h1{
+    letter-spacing: 0.6rem;
+    color: var(--textColor);
+    font-family: var(--fontFamilyHeading);
+    font-size: 34px;
+
+}
+#rightsidePersona input{
+    border-style: none;
+    height: 46px;
+    width: 262px;
+}
+#rightsidePersona input::placeholder{
+    text-align: center;
+    align-items: center;
+    color: var(--textColor);
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+.mail{
+    position: relative;
+    bottom: 25px;
+}
+#Booking{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+    
+}
+.btn{
+    width: 100px;
+    background-color: var(--yellowColor);
+    border: none;
+    border-radius: 50px;
+    color: var(--navBarBackgroundColor);
+    font-size: 16px;
+    font-family: var(--fontFamilyHeading);
+    padd50pxing: 10px 20px;
+    margin-top: 30px;
+}
+#footer{
+    background-color: var(--textColor);
+    margin: 0px;
+    font-family: var(--Poppins);
+    margin-top: 30px;
+}
+#footer h1{
+    margin: 0;
+    padding: 20px;
+    color: var(--navBarBackgroundColor);
+}
+.wave1{
+    transform: rotate(180deg);
+    bottom:-5px;
+    left: -3.5%;
+}
+.wave2{
+    top: 91px;
+    left: -3.5%;
+
+}
+.wave3{
+    top: -28px;
+    left: -3%;
+    transform: rotate(180deg);
+    background-position: 33px 0px;
+}
+.wave4{
+    top: 602px;
+    left: -3%;
+    background-position:start;
+    background-size: contain;
+   
+   animation: animatedBackground 10s linear infinite alternate;
+
+}
+
+.wave{
+   width:400px;
+   height: 30px;
+   background-image: url(./img/squiggklytwo.png);
+   background-repeat: repeat-x;
+   background-position:center;
+   background-size: cover;
+   position: absolute;
+   
+   
+   animation: animatedBackground 10s linear infinite alternate;
+
+}
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+  
+@media(min-width:600px) {
+
+    
+
+    .navBarBackground{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 3;
+        background-color: var(--navBarBackgroundColor);
+        opacity: 0.6;
+    }
+
+    #navBar{
+        display: block;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 1%;
+        position: fixed;
+        top: 0;
+        z-index: 13;
+        
+    }
+    .navBarLink{
+        margin-bottom: 1%;
+        margin-right: 5%;
+        text-decoration: none;
+        font-family: var(--fontFamilyHeading);
+        color: var(--textColor);
+        font-size: 19px;
+        z-index: 13;
+        letter-spacing: 0.2rem;
+    
+    }
+    #homeContainer{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background-color: red;
+    }
+    #videoContainer{
+        height: 90%;
+        width: 100%;
+    }
+    #videos{
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        margin-top: -106px;
+        
+    }
+    #latestvideo{
+        width: 100%;
+        height:600px
+    }
+    #showCase{
+        width: 100%;
+        height:100vh;
+    }
+    .wave{
+        position: relative;
+    
+        transform: rotate(180deg);
+        width:800px;
+
+        background-image: url(./img/squiggklytwo.png);
+        background-position: center;
+        background-size: contain;
+    }
+    .wave1{
+        transform: none;
+        bottom: 175px;
+        width:800px;
+    
+    }
+    #logo{
+        width: 55%;
+        position: absolute;
+        bottom: -15%;
+        left: -3%;
+    }
+   
+    .videoFrame{
+        width: 500px;
+    }
+    #controlsContainer{
+        height: 241px;
+    }
+    #logoAndNameContainer{
+        width: 20%;
+        height: 100%;
+        
+    }
+    .songName{
+        top: 10%;
+        font-size: 32px;
+    }
+    #imgSong{
+        width:40%;
+        height: 50%;
+        
+        top: -20%;
+    }
+    #lineAndPing{
+        width: 100%;
+        height: 5px;
+        position: relative;
+        top: 30%;
+    }
+    #divCtrl{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    
+    }
+    .line{
+        width: 100%;
+        height: 2px;
+        background-color: var(--yellowColor);
+        position: absolute;
+        top: 50%;
+    }
+    .ping{
+        width: 10px;
+        height: 10px;
+        background-color: var(--navBarBackgroundColor);
+        border: var(--yellowColor) 1px solid ;
+        border-radius: 50px;
+        position: absolute;
+        left: 0%;
+        top: -3px;
+    }
+    
+    #btns{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        position: absolute;
+        bottom: 28%;
+    }
+    #btns img{
+        width: 35px;
+    }
+    #timeContainer{
+        width: 15%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        color: #FFECD1;
+        position: absolute;
+       right: 0%;
+        top: 20%;
+    }
+    #socialLinksContainer{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 100px;
+    }
+    #moreSays{
+        color: #78290F;
+        font-weight: 700;
+        font-size: 20px;
+    
+    }
+    #underline{
+        width: 45px;
+        height: 2px;
+        background-color: var(--textColor);
+        position: absolute;
+        top: 44%;
+    }
+    #linksContainer{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    #linksContainer img{
+        height: 35px;
+    }
+    #eventContainer{
+        background-image:url(./img/SQUIGGLY.png);
+        background-size: cover;
+        width: 100%;
+        height:380px;
+        margin-top: 150px;
+    }
+    #event{
+        text-align: center;
+        
+        color: var(--navBarBackgroundColor);
+        font-size: 87px;
+        letter-spacing: 1.5rem;
+        font-family: var(--fontFamilyHeading);
+    
+    }
+    #schedule{
+        text-align: center;
+        color: var(--navBarBackgroundColor);
+        font-size: 35px;
+        margin: 0;
+        letter-spacing: 0.1rem;
+        position: relative;
+        top: 100px;
+        font-family: var(--fontFamilyHeading);
+    }
+    #songContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom : 200px;
+        margin-top:  -40px;
+        background-color: var(--textColor);
+        padding: 9%;
+        color: var(--yellowColor);
+        gap: -40px;
+        
+
+    }
+    #songContainer h1{
+        color: var(--yellowColor);
+        letter-spacing: 1.1rem;
+        font-weight: bolder;
+        font-size: 119px;
+    }
+    .songContainer{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        
+    
+    }
+    .songContainer p {
+       font-size:  25px;
+        margin: 3px;
+        font-weight: bolder;
+    }
+    .btn{
+        width: 176px;
+        background-color: var(--yellowColor);
+        border: none;
+        border-radius: 50px;
+        color: var(--navBarBackgroundColor);
+        font-size: 12px;
+        font-family: var(--fontFamilyHeading);
+        padding: 10px 20px;
+    }
+    #aboutUsPic{
+        width: 100%;
+    }
+    #AboutUs{
+        display: flex;
+        flex-direction: row;
+    }
+    #leftSideAbout{
+        width: 60%;
+        height: 40%;
+        margin: 20px;
+    }
+    #rightSideAbout{
+        margin-top: 20px;
+        width: 30%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 60px;
+        font-weight: bolder;
+        font-family: 'Poppins';
+        color: var(--textColor);
+        font-style:italic;
+        font-size: 18px;
+        justify-content: center ;
+        align-items: center;
+        text-transform: lowercase;
+    }
+    #leftSidePersona{
+        width: 50%;
+        height: 400px;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    #leftSidePersona h1{
+        width: 30%;
+        margin: auto;
+    }
+    #leftSidePersona span{
+        letter-spacing: 0.8rem;
+        text-align: center;
+    }
+    #rightsidePersona{
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    #rightsidePersona h1{
+        letter-spacing: 1rem;
+    }
+    #Booking{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    .h1Text{
+        word-spacing: 13px;
+        text-align: center;
+        font-size: 69px;
+        letter-spacing: 1.5rem
+    }
+    .up{
+        position: relative;
+        top: 13px;
+    }
+    .down{
+        position: relative;
+        top: -22px;
+        z-index: -2;
+    }
+    h1{
+        font-size: 39px;
+        margin: 0;
+    }
+
+    .wave1{
+        transform: rotate(180deg);
+        bottom:3px;
+        left: 0%;
+      
+    }
+    .wave2{
+        top: 240px;
+        transform: none;
+        left: 0%;
+    }
+    .wave3{
+        top: -28px;
+        left: 0%;
+        transform: rotate(180deg);
+        background-position: 33px 0px;
+    }
+    .wave4{
+        top: 1058px;
+        left: 0%;
+        transform: none;
+        background-position:start;
+        background-size: contain;
+       
+       animation: animatedBackground 10s linear infinite alternate;
+    
+    }
+    
+    .wave{
+       width:100%;
+       height: 30px;
+       background-image: url(./img/squiggklytwo.png);
+       background-repeat: repeat-x;
+       background-position:center;
+       background-size: cover;
+       position: absolute;
+       
+       
+       animation: animatedBackground 10s linear infinite alternate;
+    
+    }
+}
