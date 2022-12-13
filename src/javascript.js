@@ -41,6 +41,7 @@ function persona(container,firstName, lastName, number, email){
 }
 function aboutUs(){
     let container = createElement('section',body,'AboutUs',[''],[''],'','','');
+    createWave(container,'wave4')
     let leftSide = createElement('section',container,'leftSideAbout',[''],[''],'','','');
     let rightSide = createElement('section',container,'rightSideAbout',[''],[''],'','','');
     
@@ -56,14 +57,30 @@ function aboutUs(){
 function songsList(){
     let songsContainer= createElement('section',body,'songContainer',[''],[''],'','','');
     let songArr = ['Benzin ft. Migidi Mansa','Isabella','Kan Du Maerk Det','Sa Godt For Mig','Sommer Latino','Funk i Faest','Pigeglad','Kom og Dans','Sa Ruller Vi','En Nat- Provins Remix','Gi Den Gas Nu','Travlt Hversdag'];
+    let videoName =  document.getElementById('latestVideo').className;
     createElement('h1',songsContainer,'',[''],[''],'','','music');
+
     for(let i = 0; i< songArr.length; i++){
         let songContainer = createElement('div',songsContainer,'',[''],[''],['songContainer'],'','');
-        createElement('p', songContainer,'',[''],[''],'','',i+1+'. ');
-        createElement('p',songContainer,'',[''],[''],'','',songArr[i])
+        if(videoName == 'komOgDans'){
+            if(songArr[i] == 'Kom og Dans'){
+                createElement('p', songContainer,'',[''],[''],['active'],'',i+1+'. ');
+                createElement('p',songContainer,'',[''],[''],['active'],'',songArr[i])
+            }else{
+                createElement('p', songContainer,'',[''],[''],'','',i+1+'. ');
+                createElement('p',songContainer,'',[''],[''],'','',songArr[i])
+            }
+        }else if(videoName == 'sommerLatino') {
+            createElement('p', songContainer,'',[''],[''],'','',i+1+'. ');
+            createElement('p',songContainer,'',[''],[''],'','',songArr[i])
+        }
+        
+        
     }
     createWave(songsContainer,'wave3')
-    createWave(songsContainer,'wave4')
+    
+    console.log(videoName);
+    
     
 }
 function eventsContainer(){
@@ -75,8 +92,8 @@ function eventsContainer(){
 function latestVideo(){
     let container = createElement('section',body,'latest',[''],[''],'','','')
     createElement('h1',container, '',[''],[''],['h1Text','up'],'','latest')
-    let video = createElement('video',container,'latestvideo',[''],['click',stopVideo],'','','');
-    createElement('source',video,'latestVideo',['src','./img/video.mp4','controls',"''"],[''],'','','');
+    let video = createElement('video',container,'latestvideo',['controls',"''"],['click',stopVideo],'','','');
+    createElement('source',video,'latestVideo',['src','./img/video.mp4','controls',"''"],[''],['komOgDans'],'','');
     createElement('h1',container, '',[''],[''],['h1Text','down'],'','video')
 
     video.play();
@@ -98,10 +115,24 @@ function socialLinks(){
     createElement('p',socialLinksConatainer,'moreSays',[''],[''],'','','more');
     createElement('div',socialLinksConatainer,'underline',[''],[''],'','','');
     let linksContainer = createElement('div',socialLinksConatainer,'linksContainer',[''],[''],'','','');
-    createElement('img',linksContainer,'spotify',['src','./img/spotify.png'],[''],'','','')
-    createElement('img',linksContainer,'soundCloud',['src','./img/soundcloud.png'],[''],'','','')
-    createElement('img',linksContainer,'youtube',['src','./img/youtube.png'],[''],'','','')
-    createElement('img',linksContainer,'instagram',['src','./img/instagram.png'],[''],'','','')
+    createElement('img',linksContainer,'spotify',['src','./img/spotify.png'],['click',social],'','','')
+    createElement('img',linksContainer,'soundCloud',['src','./img/soundcloud.png'],['click',social],'','','')
+    createElement('img',linksContainer,'youtube',['src','./img/youtube.png'],['click',social],'','','')
+    createElement('img',linksContainer,'instagram',['src','./img/instagram.png'],['click',social],'','','')
+}
+function social(e){
+    let arrOfLinks = ['https://www.instagram.com/provinsprojektet/?fbclid=IwAR0BJdP65Q0q6O0BYzU777lf92yROUUX0E_68-YlwLItm_z8RjGpBFhEHmA','https://www.facebook.com/provinsprojektet','https://soundcloud.com/provinsprojektet?fbclid=IwAR0Be7jBCbEF-HMf9Bt3QY4zmxolw8dxyf86EW_oG3tWx7V6XIVFYFEWgHM','https://open.spotify.com/artist/3TAjNpsYKnAOItFtmkYqmW?si=ssUPaktCRT-O11rnLfxu5w&fbclid=IwAR3E317Hy9OGJVEXVFQgA7QQwTP11T7U0-oNnvYhTY33VXVWsfS8MypPcZE&nd=1','https://www.youtube.com/channel/UCxE6-YKuqEF1Xl8xko7e4IQ']
+    let targetId = e.currentTarget.id;
+    if(targetId == 'spotify'){
+        window.open(arrOfLinks[3])
+    }else if(targetId == 'soundCloud'){
+        window.open(arrOfLinks[2])
+    }else if(targetId == 'youtube'){
+        window.open(arrOfLinks[4])
+    }else{
+        window.open(arrOfLinks[0]);
+    }
+
 }
 function home(){
     let homeContainer = createElement('div',body,'video',[''],[''],'','');

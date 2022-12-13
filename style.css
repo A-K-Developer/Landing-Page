@@ -208,7 +208,6 @@ h5{
     align-items: flex-start;
     margin-top:  -40px;
     background-color: var(--textColor);
-    padding: 9%;
     color: var(--yellowColor);
     gap: 10px;
     font-family: var(--fontFamilyHeading);
@@ -235,6 +234,9 @@ h5{
     margin: 3px;
     font-weight: bolder;
 }
+.active{
+    color: var(--navBarBackgroundColor);
+}
 #aboutUsPic{
     width: 100%;
 }
@@ -243,6 +245,7 @@ h5{
     flex-direction: column;
     justify-content: center;
     margin-top: 50px;
+    position: relative;
 }
 #leftSideAbout{
     position: relative;
@@ -383,22 +386,22 @@ h5{
 .wave1{
     transform: rotate(180deg);
     bottom:-5px;
-    left: -3.5%;
+    
 }
 .wave2{
     top: 91px;
-    left: -3.5%;
+    
 
 }
 .wave3{
     top: -28px;
-    left: -3%;
+    
     transform: rotate(180deg);
     background-position: 33px 0px;
 }
 .wave4{
-    top: 602px;
-    left: -3%;
+    top: -52px;
+    
     background-position:start;
     background-size: contain;
    
@@ -407,7 +410,7 @@ h5{
 }
 
 .wave{
-   width:400px;
+   width:100%;
    height: 30px;
    background-image: url(./img/squiggklytwo.png);
    background-repeat: repeat-x;
@@ -788,13 +791,11 @@ h5{
         background-position: 33px 0px;
     }
     .wave4{
-        top: 1058px;
+        top: 5%;
         left: 0%;
         transform: none;
-        background-position:start;
-        background-size: contain;
-       
-       animation: animatedBackground 10s linear infinite alternate;
+        background-position:33px 0px;
+        
     
     }
     
